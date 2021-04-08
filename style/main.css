@@ -59,9 +59,32 @@ header nav a:hover {
 }
 
 .filme_principal .descricao {
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .titulo {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .8);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao em {
+    margin-right: 8px;
 }
