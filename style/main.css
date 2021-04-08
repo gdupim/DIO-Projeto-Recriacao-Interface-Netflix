@@ -1,4 +1,4 @@
-/* ? Variáveis: */
+/*? Variáveis e reset: */
 
 :root {
     --vermelho: #E50914;
@@ -11,9 +11,13 @@
     box-sizing: border-box;
 }
 
+
+/*? Elementos base: */
+
 body {
     background-color: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -38,4 +42,26 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+
+/*? Elemento relacionados ao filme principal: */
+
+.filme_principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("/img/brba.jpg");
+    background-size: cover;
+    height: 400px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
 }
