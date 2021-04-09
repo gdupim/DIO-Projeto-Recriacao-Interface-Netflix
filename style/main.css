@@ -47,7 +47,7 @@ header nav a:hover {
 
 /*? Elemento relacionados ao filme principal: */
 
-.filme_principal {
+.filme-principal {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("/img/brba.jpg");
     background-size: cover;
     height: 400px;
@@ -58,7 +58,7 @@ header nav a:hover {
     align-items: flex-start;
 }
 
-.filme_principal .descricao {
+.filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -94,6 +94,12 @@ header nav a:hover {
     margin-right: 20px;
 }
 
-.filme_principal .container {
+.filme-principal .container {
     width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
