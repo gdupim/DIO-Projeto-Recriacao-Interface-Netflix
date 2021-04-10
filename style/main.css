@@ -1,8 +1,9 @@
 /*? Variáveis e reset: */
 
 :root {
-    --vermelho: #E50914;
-    --preta: #141414;
+    --cinzaAzulado: rgb(0, 10, 25);
+    --azulEscuro: #2e25af;
+    --azulClaro: #31a1d0;
 }
 
 * {
@@ -15,9 +16,14 @@
 /*? Elementos base: */
 
 body {
-    background-color: var(--preta);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cinzaAzulado);
+    font-family: 'Roboto', 'Consolas';
     color: white;
+}
+
+main{
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 header .container {
@@ -25,13 +31,19 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 10px;
 }
 
 header .logo {
     margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    color: var(--azulEscuro);
+    font-family: 'Roboto';
     font-size: 40px;
+}
+
+.logo a{
+    color: var(--azulEscuro);
+    text-decoration: none;
 }
 
 header nav a {
@@ -44,13 +56,19 @@ header nav a:hover {
     color: #fff;
 }
 
+/*? Elementos do site: */
+
+.titulo-site{
+    color: var(--azulClaro);
+    text-decoration: underline;
+}
 
 /*? Elemento relacionados ao filme principal: */
 
 .filme-principal {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("/img/brba.jpg");
     background-size: cover;
-    height: 400px;
+    height: 450px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -65,7 +83,7 @@ header nav a:hover {
 
 .titulo {
     margin-top: 15%;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -74,10 +92,19 @@ header nav a:hover {
     border: none;
     color: white;
     padding: 15px 30px;
-    margin-right: 15px;
     font-size: 12px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-right: 15px;
+    border-radius: 100px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
 }
 
 .botao:hover {
@@ -97,6 +124,8 @@ header nav a:hover {
 .filme-principal .container {
     width: 70%;
 }
+
+/*? Elementos do carrosel de filmes:*/
 
 .box-filme {
     height: 100%;
