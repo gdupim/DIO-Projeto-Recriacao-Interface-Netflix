@@ -25,13 +25,17 @@ TODO: Formatar o carrosel.
     <!--? Menu e logo:-->
     <header>
         <div class="container">
-            <h2 class="logo"><a href="#">Sci<span class="titulo-site">Hub</span></a></h2>
+            <h2 class="logo">
+                <a href="#">
+                    <em class="fas fa-flask"></em>Sci<span class="titulo-site">Hub</span>
+                </a>
+            </h2>
             <nav>
                 <!--TODO: Fazer os links funcionarem e redirecionarem pra algum lugar:-->
                 <a href="#">Ínicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#documentarios">Documentários</a>
             </nav>
         </div>
     </header>
@@ -56,43 +60,44 @@ TODO: Formatar o carrosel.
                 </div>
             </div>
         </div>
-    </main>
-
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <!--TODO: Fazer as imagens serem clicáveis e redirecionarem para algum lugar:-->
-            <div class="item">
-                <img class="box-filme" src="img/min1.jpg" alt="Godzilla Vs Kong">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min2.jpg" alt="Liga da Justiça Snyder Cut">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min3.jpg" alt="Falcão e o Soldado Invernal">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min4.jpg" alt="The Walking Dead">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min5.jpg" alt="Grey's Anatomy">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min6.jpg" alt="Game Of Thrones">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min7.jpg" alt="Cobra Kai">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min8.jpg" alt="WandaVision">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min9.jpg" alt="Justiceiro">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/min10.jpg" alt="Um príncipe em Nova York 2">
+        
+        <div id="filmes">
+            <h3 class="titulo-carrosel">Filmes:</h3>
+            <div class="owl-carousel owl-theme">
+                <!--TODO: Fazer as imagens serem clicáveis e redirecionarem para algum lugar:-->
+                <div class="item">
+                    <img class="box-filme" src="img/min1.jpg" alt="Godzilla Vs Kong">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min2.jpg" alt="Liga da Justiça Snyder Cut">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min3.jpg" alt="Falcão e o Soldado Invernal">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min4.jpg" alt="The Walking Dead">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min5.jpg" alt="Grey's Anatomy">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min6.jpg" alt="Game Of Thrones">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min7.jpg" alt="Cobra Kai">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min8.jpg" alt="WandaVision">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min9.jpg" alt="Justiceiro">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min10.jpg" alt="Um príncipe em Nova York 2">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!--? JS:-->
     <script src="https://kit.fontawesome.com/4c40f214e1.js" crossorigin="anonymous"></script>
