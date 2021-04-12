@@ -10,8 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
 
 /*? Elementos base: */
 
@@ -79,7 +79,7 @@ header nav a:hover {
 /*? Elemento relacionados ao filme principal: */
 
 .filme-principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)100%), url("/img/brba.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)100%), url("/img/destaques/filme-destaque1.jpg");
     background-size: cover;
     background-attachment: fixed;
     padding: 5% 0% 7.5%;
@@ -100,19 +100,18 @@ header nav a:hover {
 .titulo {
     margin-top: 15%;
     font-size: 50px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .botao {
     background-color: rgba(0, 0, 0, .8);
-    border: none;
     color: white;
-    padding: 5.5% 5.5%;
+    border: none;
+    padding: 10.5% 25.5%;
     font-size: 12px;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-right: 15px;
     border-radius: 100px;
+    margin-right: 5%;
 }
 
 .botoes{
@@ -120,7 +119,7 @@ header nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 36.5%;
+    width: 30.5%;
 }
 
 .botao:hover {
@@ -129,7 +128,7 @@ header nav a:hover {
 }
 
 .botao em {
-    margin-right: 8px;
+    margin-right: 5%;
 }
 
 .container {
