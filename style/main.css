@@ -34,6 +34,7 @@ header{
     background-color: var(--cinzaAzulado);
     padding-top: 10px;
     padding-bottom: 15px;
+    z-index: 2;
 }
 
 header .container {
@@ -106,12 +107,12 @@ header nav a:hover {
     background-color: rgba(0, 0, 0, .8);
     color: white;
     border: none;
-    padding: 10.5% 25.5%;
+    padding: 10px 25px;
     font-size: 12px;
     cursor: pointer;
     transition: 0.3s ease;
     border-radius: 100px;
-    margin-right: 5%;
+    width: auto;
 }
 
 .botoes{
@@ -119,7 +120,7 @@ header nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 30.5%;
+    width: 42.5%;
 }
 
 .botao:hover {
@@ -140,7 +141,7 @@ header nav a:hover {
     width: 70%;
 }
 
-/*? Elementos do carrosel de filmes:*/
+/*? Elementos do carrosel:*/
 
 .titulo-carrosel {
     font-size: 30px;
@@ -148,7 +149,7 @@ header nav a:hover {
     margin-bottom: 1%;
 }
 
-.box-filme {
+.box{
     height: 100%;
     width: 100%;
     display: block;

@@ -3,12 +3,33 @@
     header .container{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .botao{
         margin-top: 5px;
-        width: auto;
+        margin-right: 12.5%;
         height: auto;
+    }
+
+    .botoes{
+        width: auto;
+    }
+
+    .filme-principal{
+        background-position: center;
+    }
+
+    .filme-principal .descricao{
+        font-size: 15px;
+    }
+
+    .filme-principal .container{    
+        width: auto;
+    }
+
+    .titulo{
+        font-size: 35px;
     }
 }
 
