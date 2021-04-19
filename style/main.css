@@ -32,8 +32,8 @@ header{
     position: sticky;
     top: 0px;
     background-color: var(--cinzaAzulado);
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 9.5px;
+    padding-bottom: 8.5px;
     z-index: 2;
 }
 
@@ -87,6 +87,7 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start;
     border-radius: 15px;
+    height: 560px;
 }
 
 .destaque .descricao {
@@ -142,8 +143,8 @@ header nav a:hover {
 
 .titulo-carrosel {
     font-size: 30px;
-    margin-top: 5.5%;
-    margin-bottom: 1%;
+    margin-top: 7.5%;
+    margin-bottom: 1.5%;
 }
 
 .box{
@@ -151,4 +152,9 @@ header nav a:hover {
     width: 100%;
     display: block;
     border-radius: 15px;
+}
+
+.filmes-series-docs{
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
