@@ -2,11 +2,12 @@
 <!--
 TODO LIST:
 TODO: Colocar os destaques mudando constantemente com um carrosel.
-TODO: Formatar o carrosel.
-TODO: Os filmes/séries/documentários serem clicáveis e terem links.
 -->
 
 <html lang="pt-br">
+
+<!--? Favicon/Ícone da página: -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,30 +39,31 @@ TODO: Os filmes/séries/documentários serem clicáveis e terem links.
     </header>
 
     <main>
-        <div class="filme-principal">
-            <!--? Info:-->
-            <div class="container">
-                <h3 class="titulo">Godzilla Vs Kong</h3>
-                <p class="descricao">Em uma era em que os monstros andam na Terra, a luta da humanidade por seu futuro bota Godzilla e Kong em confronto. Enquanto Monarch vai em uma missão em terreno desconhecido descobrindo pistas sobre as origens dos Titãs, uma conspiração ameaça tirar as criaturas da Terra para sempre.</p>
+        <div class="owl-carousel-destaques owl-theme" id="carroselDestaques">
+            <div class="destaque">
+                <!--? Info:-->
+                <div class="container">
+                    <h3 class="titulo">Godzilla Vs Kong</h3>
+                    <p class="descricao">Em uma era em que os monstros andam na Terra, a luta da humanidade por seu futuro bota Godzilla e Kong em confronto. Enquanto Monarch vai em uma missão em terreno desconhecido descobrindo pistas sobre as origens dos Titãs, uma conspiração ameaça tirar as criaturas da Terra para sempre.</p>
 
-                <!--TODO: Fazer os botões redirecionarem para algum lugar:-->
-                <div class="botoes">
-                    <a href="https://www.youtube.com/watch?v=kIET9yMABD8" target="_blank">
-                    <button role="button" class="botao">
-                        <em class="fas fa-play"></em>
-                        Assistir trailer agora
-                    </button>
-                    </a>
-                    <a href="https://www.themoviedb.org/movie/399566-godzilla-vs-kong" target="_blank">
-                    <button role="button" class="botao">
-                        <em class="fas fa-info-circle"></em>
-                        Mais informações 
-                    </button>
-                    </a>
+                    <div class="botoes">
+                        <a href="https://www.youtube.com/watch?v=kIET9yMABD8" target="_blank">
+                        <button role="button" class="botao">
+                            <em class="fas fa-play"></em>
+                            Assistir trailer agora
+                        </button>
+                        </a>
+                        <a href="https://www.themoviedb.org/movie/399566-godzilla-vs-kong" target="_blank">
+                        <button role="button" class="botao">
+                            <em class="fas fa-info-circle"></em>
+                            Mais informações 
+                        </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <div id="filmes">
             <h3 class="titulo-carrosel">Filmes:</h3>
             <div class="owl-carousel owl-theme" id="carroselFilmes"></div>
@@ -69,8 +71,7 @@ TODO: Os filmes/séries/documentários serem clicáveis e terem links.
         
         <div id="series">
             <h3 class="titulo-carrosel">Séries:</h3>
-            <div class="owl-carousel owl-theme" id="carroselSeries">
-            </div>
+            <div class="owl-carousel owl-theme" id="carroselSeries"></div>
         </div>
 
         <div id="doc">

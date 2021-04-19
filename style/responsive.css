@@ -16,15 +16,15 @@
         width: auto;
     }
 
-    .filme-principal{
+    .destaque{
         background-position: center;
     }
 
-    .filme-principal .descricao{
+    .destaque .descricao{
         font-size: 15px;
     }
 
-    .filme-principal .container{    
+    .destaque .container{    
         width: auto;
     }
 

@@ -79,23 +79,24 @@ header nav a:hover {
 
 /*? Elemento relacionados ao filme principal: */
 
-.filme-principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)100%), url("/img/destaques/filme-destaque1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+.destaque {
     padding: 5% 0% 7.5%;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.filme-principal .descricao {
+.destaque .descricao {
     margin-top: 10px;
     margin-bottom: 4.5%;
     font-size: 18px;
+}
+
+.destaque .container {
+    width: 70%;
 }
 
 .titulo {
@@ -135,10 +136,6 @@ header nav a:hover {
 .container {
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.filme-principal .container {
-    width: 70%;
 }
 
 /*? Elementos do carrosel:*/

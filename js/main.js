@@ -15,6 +15,12 @@ let linksSeries = ["img/series/serie1.jpg", "img/series/serie2.jpg", "img/series
                    "img/series/serie5.jpg", "img/series/serie6.jpg", "img/series/serie7.jpg", "img/series/serie8.jpg", 
                    "img/series/serie9.jpg", "img/series/serie10.jpg"];
 
+let seriesHref =["https://www.themoviedb.org/tv/88396-falcon-winter-soldier", "https://www.themoviedb.org/tv/60735-the-flash", 
+                 "https://www.themoviedb.org/tv/85271-wandavision", "https://www.themoviedb.org/tv/82856-the-mandalorian",
+                 "https://www.themoviedb.org/tv/66732-stranger-things", "https://www.themoviedb.org/tv/60625-rick-and-morty",
+                 "https://www.themoviedb.org/tv/615-futurama", "https://www.themoviedb.org/tv/57243-doctor-who", 
+                 "https://www.themoviedb.org/tv/4087-the-x-files", "https://www.themoviedb.org/tv/4194-star-wars-the-clone-wars"];
+
 let altsSeries = ["Falcão e o Soldado Invernal", "Flash", "Wandavision", "O Mandaloriano", "Stranger Things", "Rick And Morty",
                   "Futurama", "Doctor Who", "Arquivo X", "Star Wars: Guerra dos Clones"];
 
@@ -22,14 +28,46 @@ let linksDocs = ["img/documentarios/doc1.jpg", "img/documentarios/doc2.jpg", "im
                  "img/documentarios/doc5.jpg", "img/documentarios/doc6.jpg", "img/documentarios/doc7.jpg", "img/documentarios/doc8.jpg", 
                  "img/documentarios/doc9.jpg", "img/documentarios/doc10.jpg"];
 
+let docsHref = ["https://www.themoviedb.org/movie/800394-the-last-cruise", "https://www.themoviedb.org/movie/799555-operation-varsity-blues",
+                "https://www.themoviedb.org/movie/410718-before-the-flood", 
+                "https://www.themoviedb.org/movie/776142-crack-cocaine-corruption-conspiracy", 
+                "https://www.themoviedb.org/movie/360029-into-the-inferno", "https://www.themoviedb.org/movie/801058-seapiracy", 
+                "https://www.themoviedb.org/movie/656690-the-social-dilemma", 
+                "https://www.themoviedb.org/movie/401773-if-it-bleeds-we-can-kill-it-the-making-of-predator",
+                "https://www.themoviedb.org/movie/664280-david-attenborough-a-life-on-our-planet", 
+                "https://www.themoviedb.org/movie/435365-the-story-of-star-wars"];
+
 let altsDocs = ["Último Cruzeiro", "Educação Americana: Fraude e Privilégio", "Seremos História?", 
                 "Crack: Cocaína, Corrupção e Conspiração", "Visita ao Inferno", "Seaspiracy: Mar Vermelho", "O Dilema das Redes", 
                 "If It Bleeds We Can Kill It: The Making of \'Predator\'", "David Attenborough e Nosso Planeta", "The Story of Star Wars"];
+
+let destaquesLinks = ["img/destaques/filme-destaque1.jpg", "img/destaques/filme-destaque2.jpg", "img/destaques/filme-destaque3.jpg", 
+                      "img/destaques/serie-destaque1.jpg", "img/destaques/serie-destaque2.jpg", "img/destaques/serie-destaque3.jpg", 
+                      "img/destaques/documentario-destaque1.jpg", "img/destaques/documentario-destaque2.jpg", "img/destaques/documentario-destaque3.jpg"];
+
+let destaquesHrefPlays = ["https://www.youtube.com/watch?v=kIET9yMABD8", "https://www.youtube.com/watch?v=uXm6T1rAe28", 
+                          "https://www.youtube.com/watch?v=jt3-3LtSj6c", "https://www.youtube.com/watch?v=ZHaokMTWgdY", 
+                          "https://www.youtube.com/watch?v=e43b-f_Vg9I&pp=qAMBugMGCgJwdBAB", "https://www.youtube.com/watch?v=p__jH6NkowU",
+                          "https://www.youtube.com/watch?v=zFfurx3RZqo", "https://www.youtube.com/watch?v=iG5ni4b9QI0",
+                          "https://www.youtube.com/watch?v=LFHj8e7mU_I"];
+
+let destaquesHrefInfos = ["https://www.themoviedb.org/movie/399566-godzilla-vs-kong", "https://www.themoviedb.org/movie/577922-tenet",
+                          "https://www.themoviedb.org/movie/791373-zack-snyder-s-justice-league", 
+                          "https://www.themoviedb.org/tv/88396-falcon-winter-soldier", "https://www.themoviedb.org/tv/60735-the-flash", 
+                          "https://www.themoviedb.org/tv/85271-wandavision", "https://www.themoviedb.org/movie/410718-before-the-flood", "https://www.themoviedb.org/movie/800394-the-last-cruise", 
+                          "https://www.themoviedb.org/movie/799555-operation-varsity-blues"];
 
 //? Carroséis:
 let carroselFilmes = document.getElementById("carroselFilmes"); 
 let carroselSeries = document.getElementById("carroselSeries");
 let carroselDocs = document.getElementById("carroselDocs");
+let carroselDestaques = document.getElementById("carroselDestaques");
+
+//? Destaque:
+let destaque = document.getElementsByClassName("destaque")[0];
+
+destaque.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)100%), url(" + destaquesLinks[0] + ")";
+destaque.style.backgroundSize = "cover";
 
 //? Gerador dos filmes:
 for(let i = 0; i<linksFilme.length; i++){
@@ -37,13 +75,19 @@ for(let i = 0; i<linksFilme.length; i++){
     let divItemFilme = document.createElement("div");
     divItemFilme.className = "item";
     
+    //? Link:
+    let linkFilme = document.createElement("a");
+    linkFilme.href = filmesHref[i];
+    linkFilme.target = "_blank";
+
     //? Imagens:
     let imgFilme = document.createElement("img");
     imgFilme.className = "box";
     imgFilme.src = linksFilme[i];
     imgFilme.alt = altsFilme[i];
 
-    divItemFilme.appendChild(imgFilme);
+    linkFilme.appendChild(imgFilme);
+    divItemFilme.appendChild(linkFilme);
     carroselFilmes.appendChild(divItemFilme);
 }
 
@@ -52,12 +96,17 @@ for(let i = 0; i<linksSeries.length; i++){
     let divItemSerie = document.createElement("div");
     divItemSerie.className = "item";
 
+    let linkSerie = document.createElement("a");
+    linkSerie.href = seriesHref[i];
+    linkSerie.target = "_blank";
+
     let imgSerie = document.createElement("img");
     imgSerie.className = "box";
     imgSerie.src = linksSeries[i];
     imgSerie.alt = altsSeries[i];
 
-    divItemSerie.appendChild(imgSerie);
+    linkSerie.appendChild(imgSerie);
+    divItemSerie.appendChild(linkSerie);
     carroselSeries.appendChild(divItemSerie);
 }
 
@@ -66,11 +115,16 @@ for(let i = 0; i<linksDocs.length; i++){
     let divItemDoc = document.createElement("div");
     divItemDoc.className = "item";
 
+    let linkDoc = document.createElement("a");
+    linkDoc.href = docsHref[i];
+    linkDoc.target = "_blank";
+
     let imgDoc = document.createElement("img");
     imgDoc.className = "box";
     imgDoc.src = linksDocs[i];
     imgDoc.alt = altsDocs[i];
 
-    divItemDoc.appendChild(imgDoc);
+    linkDoc.appendChild(imgDoc);
+    divItemDoc.appendChild(linkDoc);
     carroselDocs.appendChild(divItemDoc);
 }
